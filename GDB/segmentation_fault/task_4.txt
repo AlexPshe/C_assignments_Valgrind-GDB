@@ -1,0 +1,4 @@
+11 line with segfault «printf("Key=%s",ch);»
+
+Explanation:
+The function "printf" went beyond the allocated memory in the search for the end of the line "\0", because the specifier «%s».

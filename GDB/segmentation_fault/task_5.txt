@@ -1,0 +1,7 @@
+54 line with segfault «res = stack->head->data;»
+
+Explanation:
+Cannot access memory at address.
+
+
+

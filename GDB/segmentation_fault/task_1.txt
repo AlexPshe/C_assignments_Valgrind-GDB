@@ -1,0 +1,5 @@
+13 line with segfault «ln = strlen(s);»
+
+Explanation:
+«s» is an uninitialized pointer and it was writing to a random location in memory. This will invoke undefined behaviour. Need to allocate some memory for «s».
+Also, it is wrong to use «gets()». There is no way to prevent it overflowing the memory you allocate. Should use «fgets()» instead.

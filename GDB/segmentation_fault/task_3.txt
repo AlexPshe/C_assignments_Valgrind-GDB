@@ -1,0 +1,4 @@
+12 line with segfault «X = * P;»
+
+Explanation:
+Attempt to access non-existent memory

@@ -1,0 +1,8 @@
+12 line with segfault «printf ("%s\n", *a);»
+
+Explanation:
+First, the memory for the character array is dynamically allocated line 9. 
+The pointer "a" contains the address of the first byte of this portion of memory.
+Than the pointer references the first byte of the string literal "Hello".
+Now in the allocated memory there are «H» and still some uninitialized memory cells.
+«printf» function has the specifier "%s", its argument is a string with the end of line "\0". «printf» searches for the end of the line outside of the allocated memory, so there is a segfault.

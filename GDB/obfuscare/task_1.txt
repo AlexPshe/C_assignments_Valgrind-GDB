@@ -1,0 +1,7 @@
+6 line error
+
+Right variant:
+int main(){const int rere=10;int a[rere] = {0},w = 0,k =-rere;for (;k<0;++k)scanf("%d", &a[k+rere]);for (int t = -rere; t < 0 ; ++t ) {w+=*(t+a+rere);}
+
+Explanation:
+10 integers are entered, print their sum.
